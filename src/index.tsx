@@ -1,11 +1,9 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 import { Auth0Provider } from '@auth0/auth0-react'
 import './bootstrap-eviota.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import { MixpanelProvider } from 'react-mixpanel-browser';
 import { ApolloWrapper } from './components/apollo-wrapper'
 import { KinProvider } from './lib/kin-client'
