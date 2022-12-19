@@ -69,7 +69,6 @@ const KinPayment = ({
           resetState();
         }
 
-        console.log(`Transaction ID ${txid}`)
       } catch (error) {
         setErrorMessage('An error occured whilst creating payment.')
       }

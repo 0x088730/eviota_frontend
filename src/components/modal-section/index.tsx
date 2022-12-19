@@ -20,7 +20,7 @@ const ModalBodySection: React.FC<Props> = (props: any) => {
       setStatus(true)
     }
   }, [props.keyVal])
-  console.log(props.keyVal)
+
   return (
     <Wrapper>
       <DivContainer>

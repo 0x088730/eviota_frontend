@@ -4,7 +4,7 @@ import { useMixpanel } from 'react-mixpanel-browser'
 import { useParams } from 'react-router-dom'
 import { useBooking } from '../hooks'
 
-const CreateBooking = (props: any) => {
+const CreateBooking = () => {
   
   const mixpanel = useMixpanel()
 
@@ -22,18 +22,13 @@ const CreateBooking = (props: any) => {
       console.error(error)
       return
     }
-
     if (isLoading) {
       return
     }
-
     if (tasks.length === 0) {
       dispatch({ type: 'add_task', payload: 'requested_teacher' })
       dispatch({ type: 'get_teacher_details', payload: { teacherLanguageId } })
     }
-
-    console.log(state, tasks)
-
   }, [dispatch, error, isLoading, state, tasks, teacherLanguageId])
 
   return (

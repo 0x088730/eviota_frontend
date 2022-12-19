@@ -116,7 +116,6 @@ export const useBooking = (initialState: any) => {
   })
 
   const reducer = (state, { type, payload }) => {
-    // console.log(`action called: "${type}"`, payload)
     switch (type) {
       case 'set': {
         return {
